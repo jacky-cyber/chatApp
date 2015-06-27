@@ -15,6 +15,14 @@
 		83203F761B3F1D3E001DB249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83203F751B3F1D3E001DB249 /* Images.xcassets */; };
 		83203F791B3F1D3E001DB249 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83203F771B3F1D3E001DB249 /* LaunchScreen.xib */; };
 		83203F851B3F1D3E001DB249 /* chatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83203F841B3F1D3E001DB249 /* chatAppTests.swift */; };
+		83203F981B3F1D67001DB249 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83203F971B3F1D67001DB249 /* InterfaceController.swift */; };
+		83203F9A1B3F1D67001DB249 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83203F991B3F1D67001DB249 /* NotificationController.swift */; };
+		83203F9C1B3F1D67001DB249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83203F9B1B3F1D67001DB249 /* Images.xcassets */; };
+		83203FA01B3F1D67001DB249 /* chatApp WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = 83203F9F1B3F1D67001DB249 /* chatApp WatchKit App.app */; };
+		83203FA81B3F1D67001DB249 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83203FA61B3F1D67001DB249 /* Interface.storyboard */; };
+		83203FAA1B3F1D67001DB249 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83203FA91B3F1D67001DB249 /* Images.xcassets */; };
+		83203FAD1B3F1D67001DB249 /* chatApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 83203F921B3F1D67001DB249 /* chatApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		83203FB61B3F3310001DB249 /* ContactsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83203FB51B3F3310001DB249 /* ContactsListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +33,35 @@
 			remoteGlobalIDString = 83203F631B3F1D3D001DB249;
 			remoteInfo = chatApp;
 		};
+		83203FA11B3F1D67001DB249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83203F5C1B3F1D3D001DB249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83203F9E1B3F1D67001DB249;
+			remoteInfo = "chatApp WatchKit App";
+		};
+		83203FAB1B3F1D67001DB249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83203F5C1B3F1D3D001DB249 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83203F911B3F1D67001DB249;
+			remoteInfo = "chatApp WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83203FB41B3F1D67001DB249 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				83203FAD1B3F1D67001DB249 /* chatApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83203F641B3F1D3D001DB249 /* chatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +76,17 @@
 		83203F7E1B3F1D3E001DB249 /* chatAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = chatAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83203F831B3F1D3E001DB249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83203F841B3F1D3E001DB249 /* chatAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatAppTests.swift; sourceTree = "<group>"; };
+		83203F921B3F1D67001DB249 /* chatApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "chatApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83203F951B3F1D67001DB249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83203F961B3F1D67001DB249 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		83203F971B3F1D67001DB249 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		83203F991B3F1D67001DB249 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		83203F9B1B3F1D67001DB249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83203F9F1B3F1D67001DB249 /* chatApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "chatApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83203FA51B3F1D67001DB249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83203FA71B3F1D67001DB249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		83203FA91B3F1D67001DB249 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		83203FB51B3F3310001DB249 /* ContactsListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83203F8F1B3F1D67001DB249 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +119,8 @@
 			children = (
 				83203F661B3F1D3D001DB249 /* chatApp */,
 				83203F811B3F1D3E001DB249 /* chatAppTests */,
+				83203F931B3F1D67001DB249 /* chatApp WatchKit Extension */,
+				83203FA31B3F1D67001DB249 /* chatApp WatchKit App */,
 				83203F651B3F1D3D001DB249 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,6 +130,8 @@
 			children = (
 				83203F641B3F1D3D001DB249 /* chatApp.app */,
 				83203F7E1B3F1D3E001DB249 /* chatAppTests.xctest */,
+				83203F921B3F1D67001DB249 /* chatApp WatchKit Extension.appex */,
+				83203F9F1B3F1D67001DB249 /* chatApp WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,6 +176,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		83203F931B3F1D67001DB249 /* chatApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				83203FB51B3F3310001DB249 /* ContactsListController.swift */,
+				83203F971B3F1D67001DB249 /* InterfaceController.swift */,
+				83203F991B3F1D67001DB249 /* NotificationController.swift */,
+				83203F9B1B3F1D67001DB249 /* Images.xcassets */,
+				83203F941B3F1D67001DB249 /* Supporting Files */,
+			);
+			path = "chatApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		83203F941B3F1D67001DB249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83203F951B3F1D67001DB249 /* Info.plist */,
+				83203F961B3F1D67001DB249 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		83203FA31B3F1D67001DB249 /* chatApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				83203FA61B3F1D67001DB249 /* Interface.storyboard */,
+				83203FA91B3F1D67001DB249 /* Images.xcassets */,
+				83203FA41B3F1D67001DB249 /* Supporting Files */,
+			);
+			path = "chatApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		83203FA41B3F1D67001DB249 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				83203FA51B3F1D67001DB249 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +225,12 @@
 				83203F601B3F1D3D001DB249 /* Sources */,
 				83203F611B3F1D3D001DB249 /* Frameworks */,
 				83203F621B3F1D3D001DB249 /* Resources */,
+				83203FB41B3F1D67001DB249 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83203FAC1B3F1D67001DB249 /* PBXTargetDependency */,
 			);
 			name = chatApp;
 			productName = chatApp;
@@ -156,6 +255,39 @@
 			productReference = 83203F7E1B3F1D3E001DB249 /* chatAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		83203F911B3F1D67001DB249 /* chatApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83203FB11B3F1D67001DB249 /* Build configuration list for PBXNativeTarget "chatApp WatchKit Extension" */;
+			buildPhases = (
+				83203F8E1B3F1D67001DB249 /* Sources */,
+				83203F8F1B3F1D67001DB249 /* Frameworks */,
+				83203F901B3F1D67001DB249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				83203FA21B3F1D67001DB249 /* PBXTargetDependency */,
+			);
+			name = "chatApp WatchKit Extension";
+			productName = "chatApp WatchKit Extension";
+			productReference = 83203F921B3F1D67001DB249 /* chatApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		83203F9E1B3F1D67001DB249 /* chatApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83203FAE1B3F1D67001DB249 /* Build configuration list for PBXNativeTarget "chatApp WatchKit App" */;
+			buildPhases = (
+				83203F9D1B3F1D67001DB249 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "chatApp WatchKit App";
+			productName = "chatApp WatchKit App";
+			productReference = 83203F9F1B3F1D67001DB249 /* chatApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -171,6 +303,13 @@
 					83203F7D1B3F1D3E001DB249 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 83203F631B3F1D3D001DB249;
+					};
+					83203F911B3F1D67001DB249 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					83203F9E1B3F1D67001DB249 = {
+						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = XT6XX4428V;
 					};
 				};
 			};
@@ -189,6 +328,8 @@
 			targets = (
 				83203F631B3F1D3D001DB249 /* chatApp */,
 				83203F7D1B3F1D3E001DB249 /* chatAppTests */,
+				83203F911B3F1D67001DB249 /* chatApp WatchKit Extension */,
+				83203F9E1B3F1D67001DB249 /* chatApp WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -208,6 +349,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83203F901B3F1D67001DB249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83203FA01B3F1D67001DB249 /* chatApp WatchKit App.app in Resources */,
+				83203F9C1B3F1D67001DB249 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83203F9D1B3F1D67001DB249 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83203FA81B3F1D67001DB249 /* Interface.storyboard in Resources */,
+				83203FAA1B3F1D67001DB249 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +392,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83203F8E1B3F1D67001DB249 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83203FB61B3F3310001DB249 /* ContactsListController.swift in Sources */,
+				83203F9A1B3F1D67001DB249 /* NotificationController.swift in Sources */,
+				83203F981B3F1D67001DB249 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -240,6 +409,16 @@
 			isa = PBXTargetDependency;
 			target = 83203F631B3F1D3D001DB249 /* chatApp */;
 			targetProxy = 83203F7F1B3F1D3E001DB249 /* PBXContainerItemProxy */;
+		};
+		83203FA21B3F1D67001DB249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83203F9E1B3F1D67001DB249 /* chatApp WatchKit App */;
+			targetProxy = 83203FA11B3F1D67001DB249 /* PBXContainerItemProxy */;
+		};
+		83203FAC1B3F1D67001DB249 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83203F911B3F1D67001DB249 /* chatApp WatchKit Extension */;
+			targetProxy = 83203FAB1B3F1D67001DB249 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -258,6 +437,14 @@
 				83203F781B3F1D3E001DB249 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		83203FA61B3F1D67001DB249 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83203FA71B3F1D67001DB249 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -400,6 +587,68 @@
 			};
 			name = Release;
 		};
+		83203FAF1B3F1D67001DB249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = chatApp_WatchKit_Extension;
+				INFOPLIST_FILE = "chatApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		83203FB01B3F1D67001DB249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = chatApp_WatchKit_Extension;
+				INFOPLIST_FILE = "chatApp WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		83203FB21B3F1D67001DB249 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "chatApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		83203FB31B3F1D67001DB249 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "chatApp WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,6 +674,22 @@
 			buildConfigurations = (
 				83203F8C1B3F1D3E001DB249 /* Debug */,
 				83203F8D1B3F1D3E001DB249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83203FAE1B3F1D67001DB249 /* Build configuration list for PBXNativeTarget "chatApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83203FAF1B3F1D67001DB249 /* Debug */,
+				83203FB01B3F1D67001DB249 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		83203FB11B3F1D67001DB249 /* Build configuration list for PBXNativeTarget "chatApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83203FB21B3F1D67001DB249 /* Debug */,
+				83203FB31B3F1D67001DB249 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

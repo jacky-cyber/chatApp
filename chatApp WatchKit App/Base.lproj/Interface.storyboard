@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--chatApp-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="chatApp" title="chatApp" id="AgC-eL-Hgc" userLabel="chatApp" customClass="InterfaceController" customModule="chatApp_WatchKit_App" customModuleProvider="target">
+                    <menu key="menu" id="C4Z-oU-jwX">
+                        <items>
+                            <menuItem title="newMessage" icon="speaker" id="kVi-7K-EhL" userLabel="newMessage">
+                                <connections>
+                                    <action selector="newMessage" destination="AgC-eL-Hgc" id="DdW-Xb-27u"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="showRecent" icon="accept" id="gxu-6H-fTE" userLabel="showRecent">
+                                <attributedString key="userComments">
+                                    <fragment content="Hekki">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <connections>
+                                    <action selector="showRecent" destination="AgC-eL-Hgc" id="IYb-pu-Vva"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="showContacts" icon="add" id="e5t-wV-pUc" userLabel="showContacts">
+                                <connections>
+                                    <action selector="showContacts" destination="AgC-eL-Hgc" id="hEF-vb-jXj"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Menu Item" icon="pause" id="33L-8R-35V"/>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Contacts-->
+        <scene sceneID="Dhi-dD-M2E">
+            <objects>
+                <controller identifier="ContactsList" title="Contacts" id="Uc6-rC-coi" customClass="ContactsListController" customModule="chatApp_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="YHQ-oZ-ruq">
+                            <items>
+                                <tableRow identifier="contactRow" id="P3s-m1-pxP">
+                                    <group key="rootItem" width="1" alignment="left" id="Ruh-6w-q0v"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="contactsListTable" destination="YHQ-oZ-ruq" id="ZA4-fN-M17"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="428" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="chatApp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.63111891496276395" green="0.0030732683510945602" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+</document>
